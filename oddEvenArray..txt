@@ -1,0 +1,26 @@
+function totalOfEvenOddNumbers(array){
+	new_Array = []
+	let evenCounter = 0
+	let oddCouunter = 0
+	for(let count =0; count < array.length; count++){
+	
+		if (count % 2 == 0){
+			evenCounter++
+		}
+
+		else{
+			oddCounter++;
+		}
+		new_Array[0] = evencounter;
+		new_Array[1] = oddCounter;
+
+		return new_Array;
+}
+
+
+let number = [2,1,5,7,8]
+result = totalOfEvenOddNumbers(number);
+console.log(result)
+	
+
+	
