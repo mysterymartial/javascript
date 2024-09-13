@@ -82,9 +82,9 @@ test("check if a palindrome is a string or not", ()=>{
 
 test("check if a number is a multiple  of 3 and 5", ()=>{
 
-	let number = 30;
+	let number = 25;
 	let result = sumMultipleOf3And5(number);
-	let expected = 16;
+	let expected = 15;
 	expect(result).toEqual(expected);
 });
 

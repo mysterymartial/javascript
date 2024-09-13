@@ -102,19 +102,18 @@ function isPalindrome(word){
 	}
 
 	function sumMultipleOf3And5(number){
-		let add1 = 0;
-		let add2 = 0;
-		if(number % 3 == 0){
-		if(number % 5 == 0){
+		let add = 0;
+	
+		for(let counter = 1; counter < number; counter++){
+		if(counter % 3 == 0 && counter % 5 == 0){
 
-		 add1 = number / 3;
-		 add2 = number /5;
-
-}
+		 add += counter
 
 }
 
-return add1 + add2;
+}
+
+return add;
 }
 
 function isLeapYear(year){
