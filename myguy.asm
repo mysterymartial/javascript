@@ -8,3 +8,4 @@ IN AL, 60h ; Assume input from port 60h
 MOV AH, AL ; Move first input to AH
 IN AL, 60h ; Assume input from port 60h
 MOV BH, AL ; Move second input to BH
+OUT BH

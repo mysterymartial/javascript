@@ -76,6 +76,15 @@ const person = {
 
 			return result;
 		}
+		const array = new Array(3)
+		array.push(5)
+		array.push(6)
+		array.push(7);
+		array.push(12)
+		array.push(8)
+		array.push(10)
+		console.log(array)
+		
 			
 
 

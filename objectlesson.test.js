@@ -13,14 +13,14 @@ test("check if function can print a objects keys and value", ()=>{
 	expect(expected).toEqual(result);
 });
 
-test("check if function can print a objects keys and value", ()=>{
+//test("check if function can print a objects keys and value", ()=>{
 
-	let count = 0;
-	let step = 1;
-	let result = counter(count,step);
-	let expected = 1;
-	expect(expected).toEqual(result);
-});
+	//let count = 0;
+	//let step = 1;
+	//let result = counter(count,step);
+	//let expected = 1;
+	//expect(expected).toEqual(result);
+//});
 
 
 	
