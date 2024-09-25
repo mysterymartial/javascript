@@ -29,24 +29,19 @@ function bookStore(array){
 }
 
 function checkIfIsAfternoon(array){
-    let answer = []
-     return array.filter((time)=>{
-        for(let index = 0; index < array; array++){
-            if(time[index] == "P")
-                answer.push(time)
-            else{
-                return 0
-            }
-        }
-        return answer;
-        
-            
-        }
-        
-       
+    let timeFormat = "PM";
+    let result = array.filter((element)=> element.includes(timeFormat));
+    return result;
+}
+function calculateExpenses(items){
+    let total = 0;
+    for(keys in items){
+        total += items[keys]
 
-    )};
-     
+    }
+    return total;
+}
+    
      
     
      
@@ -72,4 +67,4 @@ function checkIfIsAfternoon(array){
 
 
 
-module.exports = {studentGradeAbove70, addPointToStudentScore, squareOfStudentScores,bookStore,checkIfIsAfternoon}
+module.exports = {studentGradeAbove70, addPointToStudentScore, squareOfStudentScores,bookStore,checkIfIsAfternoon,calculateExpenses}

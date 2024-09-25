@@ -1,5 +1,5 @@
 // const { default: expect } = require("expect");
-const {studentGradeAbove70, addPointToStudentScore, squareOfStudentScores,bookStore,checkIfIsAfternoon} = require("./arraytask.js");
+const {studentGradeAbove70, addPointToStudentScore, squareOfStudentScores,bookStore,checkIfIsAfternoon,calculateExpenses} = require("./arraytask.js");
 
 test("number of student that score above 70", ()=>{
 
@@ -21,10 +21,20 @@ test("add 5 point to each student", ()=>{
 	expect(result).toEqual(expected);
 });
 
+test("get square of student score", ()=>{
+
+	let number = [2,4,6,8,10];
+	let result = squareOfStudentScores(number);
+	let expected = [4,16,36,64,100]
+                    
+                    
+    
+	expect(result).toEqual(expected);
+});
 
 
 
-test("get square of each student score", ()=>{
+test("assign books to all students", ()=>{
 
 	let names = ["Emily","Jack","Sophia","Daneil"];
 	let result = bookStore(names);
@@ -46,6 +56,17 @@ test("check if it is afternoon", ()=>{
 	let listOfTime = ["11:00AM","1:00PM","3:00PM","5:00PM"];
 	let result = checkIfIsAfternoon(listOfTime);
 	let expected = ["1:00PM","3:00PM","5:00PM"]
+                    
+                    
+    
+	expect(result).toEqual(expected);
+});
+
+test("calculate user expenses", ()=>{
+
+	let listOfExpenses = {"groceries": 150,"dining out":100,"transportation":50,"entertainment":80};
+	let result = calculateExpenses(listOfExpenses);
+	let expected = 380;
                     
                     
     
