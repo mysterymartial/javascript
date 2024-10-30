@@ -1,7 +1,7 @@
 const user = {
     "name": "Mystery",
     "age": 24,
-    "occupation": "Software Engineer 
+    "occupation": "Software Engineer "
     
 
 }
